@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="br">
+  <head>
+    <meta charset="UTF-8">
+    <title>Formulário de pesquisa</title>
+    <link  rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <div class="form">
+      <h1 id="title">Formulário de pesquisa</h1>
+      <p class="empresa" id="empresa">RafaelProductions<p>
+      <p id="description">Obrigado pelo seu tempo para ajudar-nos a melhorar nossa plataforma.</p>
+      <form id="survey-form" method="post" action="https://freecatphotoapp.com/submit-cat-photo">
+        <fieldset>
+          <label id="name-label">Nome<input placeholder="Insira seu nome" id="name" type="text" name="nome" required /></label>
+          <label id="email-label">E-mail<input id="email" placeholder="Insira seu e-mail" type="email"  name="emaiul" required /></label>
+          <label id="number-label">Idade(opcional)<input placeholder="Idade" id="number" type="number" min="10" max="120" </label>
+        </fieldset>
+        <fieldset>
+          <label class="trabalho" >Qual dessas opções melhor descreve o seu trabalho?
+          <select  id="dropdown"  name="dropdown">
+            <option value="7" >Selecione</option>
+            <option value="8" >Empregado do gil lanches</option>
+            <option value="9" >Namorada do Rafael</option>
+            <option  value="10" >Desempregado</option>
+            <option value="11" >Zucoloto</option>
+            <option value="12" >Estudante</option>
+          </select>
+          </label>
+          <label>Você recomendaria RafaelProductions para um amigo?</label>
+          <label><input value="15" name="recom" type="radio" class="inline"/>Definitivamente</label>
+          <label><input  value="13" name="recom" type="radio" class="inline"/>Talvez</label>
+          <label><input value="14" name="recom" type="radio" class="inline"/>Não</label>
+          <label class="trabalho" id="dropcima">O que você mais gosta em RafaelProductions?
+          <select  id="dropdown"  name="dropdown">
+            <option value="6" >Selecione</option>
+            <option value="1" >Lindo</option>
+            <option value="2" >Gostoso</option>
+            <option value="3" >Desempregado</option>
+            <option value="4" >Forte</option>
+            <option value="5" >Engraçado</option>
+          </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <label>O que você gostaria que fosse adicionado?</label>
+          <label><input value="6"type="checkbox" class="inline" id=caixa"/>Fórum</label>
+          <label><input value="1" type="checkbox" class="inline" id=caixa"/>Cursos</label>
+          <label><input value="2"type="checkbox" class="inline" id=caixa"/>Maquina de café</label>
+          <label><input value="3" type="checkbox" class="inline" id=caixa"/>Bar</label>
+          <label><input value="4" type="checkbox" class="inline" id=caixa"/>Teatro</label>
+          <label><input value="5" type="checkbox" class="inline" id=caixa"/>Ar-condicionado</label>
+          <label for="bio">Algum comentário ou sugestão?</label>
+          <textarea placeholder="Escreva sua sugestão aqui..." id="bio" rows="15" cols="65"></textarea>
+        </fieldset>
+        <input type="Submit" id="submit"/>
+      </form>
+    </div>
+  </body>
+</html>
